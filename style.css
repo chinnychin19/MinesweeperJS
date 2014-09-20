@@ -1,0 +1,19 @@
+body {
+	margin: 0px; /* Removes thin margin at edge of browser window */
+}
+
+#gameDiv {
+  float: left;
+}
+
+#controlsDiv {
+  margin-left: 410px;
+}
+
+#statusLabel {
+  margin-left: 410px;
+}
+
+.control {
+  margin: 5px;
+}

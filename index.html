@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minesweeper!</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="app.js" />
+    <script>
+      window.onload = function() {
+        canvas = document.getElementById("gameCanvas");
+        context = canvas.getContext("2d");
+        initGame();
+        canvas.addEventListener('click', clickHandler);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="gameDiv">
+      <canvas id="gameCanvas" width="400" height="400" />
+    </div>
+
+    <div id="controlsDiv">
+
+      <div class="control" >
+        <button onclick="initGame()">New Game</button>
+      </div>
+      
+      <div class="control" >
+        <input id="cheatCheckBox" type="checkbox">Cheat</input>
+      </div>
+
+      <div class="control" >
+        <spam>Action:</spam>
+        <select id="actionSelector">
+          <option>Dig</option>
+          <option>Flag</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <spam># of mines:</spam>
+        <select id="numMinesSelector">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option selected="selected">10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+        </select>
+      </div>
+
+    </div>
+    <h1 id="statusLabel">In progress...</h1>
+  </body>
+</html>
